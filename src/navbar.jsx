@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 // 1. Impor komponen dan ikon dari Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import logo from './assets/Logo Robotiik (1).png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="text-white text-2xl font-bold">
-              LogoWeb
+                <img src={logo} className="h-8 inline-block mr-2" alt="Logo" />
             </a>
           </div>
 
